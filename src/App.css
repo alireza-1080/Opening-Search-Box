@@ -1,0 +1,70 @@
+.body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ff4081;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.app-container {
+  width: 450px;
+  height: 50px;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+  background-color: #fff;
+
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.app-container.not-active {
+  width: 50px;
+  grid-template-columns: 0px 50px;
+}
+
+.app-container input {
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  padding-left: 1.3rem;
+  font-size: 1.3rem;
+  transition: all 300ms ease-in-out;
+}
+
+.not-active input {
+  transform: scaleX(0);
+}
+
+.app-container .icon-container {
+  width: 50px;
+  height: 50px;
+  background-color: #651fff;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.not-active .icon-container {
+  background-color: #fff;
+  transition: all 300ms ease-in-out;
+}
+
+.icon {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.not-active .icon{
+  color: #651fff;
+  transition: all 300ms ease-in-out;
+}
